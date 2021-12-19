@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-undef": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "error",
+      { "enableDangerousAutofixThisMayCauseInfiniteLoops": true }
+    ]
+  }
+}
